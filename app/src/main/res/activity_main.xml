@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_black"
+    android:padding="10dp">
+
+    <!-- شاشة العرض -->
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|end"
+        android:text="0"
+        android:textColor="@color/text_white"
+        android:textSize="80sp"
+        android:padding="20dp" />
+
+    <!-- الصف الأول -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+        <Button android:id="@+id/btnAC" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="AC" android:textColor="@color/text_black" android:backgroundTint="@color/btn_light_gray" android:textSize="30sp"/>
+        <Button android:id="@+id/btnDel" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="DEL" android:textColor="@color/text_black" android:backgroundTint="@color/btn_light_gray" android:textSize="30sp"/>
+        <Button android:id="@+id/btnPercent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="%" android:textColor="@color/text_black" android:backgroundTint="@color/btn_light_gray" android:textSize="30sp"/>
+        <Button android:id="@+id/btnDiv" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="/" android:textColor="@color/text_white" android:backgroundTint="@color/btn_orange" android:textSize="30sp"/>
+    </LinearLayout>
+
+    <!-- الصف الثاني -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+        <Button android:id="@+id/btn7" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="7" android:textColor="@color/text_white" android:backgroundTint="@color/btn_dark_gray" android:textSize="30sp"/>
+        <Button android:id="@+id/btn8" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="8" android:textColor="@color/text_white" android:backgroundTint="@color/btn_dark_gray" android:textSize="30sp"/>
+        <Button android:id="@+id/btn9" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="9" android:textColor="@color/text_white" android:backgroundTint="@color/btn_dark_gray" android:textSize="30sp"/>
+        <Button android:id="@+id/btnMul" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="X" android:textColor="@color/text_white" android:backgroundTint="@color/btn_orange" android:textSize="30sp"/>
+    </LinearLayout>
+
+    <!-- الصف الثالث -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+        <Button android:id="@+id/btn4" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="4" android:textColor="@color/text_white" android:backgroundTint="@color/btn_dark_gray" android:textSize="30sp"/>
+        <Button android:id="@+id/btn5" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="5" android:textColor="@color/text_white" android:backgroundTint="@color/btn_dark_gray" android:textSize="30sp"/>
+        <Button android:id="@+id/btn6" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="6" android:textColor="@color/text_white" android:backgroundTint="@color/btn_dark_gray" android:textSize="30sp"/>
+        <Button android:id="@+id/btnSub" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="-" android:textColor="@color/text_white" android:backgroundTint="@color/btn_orange" android:textSize="30sp"/>
+    </LinearLayout>
+
+    <!-- الصف الرابع -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+        <Button android:id="@+id/btn1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="1" android:textColor="@color/text_white" android:backgroundTint="@color/btn_dark_gray" android:textSize="30sp"/>
+        <Button android:id="@+id/btn2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="2" android:textColor="@color/text_white" android:backgroundTint="@color/btn_dark_gray" android:textSize="30sp"/>
+        <Button android:id="@+id/btn3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="3" android:textColor="@color/text_white" android:backgroundTint="@color/btn_dark_gray" android:textSize="30sp"/>
+        <Button android:id="@+id/btnAdd" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="+" android:textColor="@color/text_white" android:backgroundTint="@color/btn_orange" android:textSize="30sp"/>
+    </LinearLayout>
+
+    <!-- الصف الخامس -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+        <Button android:id="@+id/btn0" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:text="0" android:textColor="@color/text_white" android:backgroundTint="@color/btn_dark_gray" android:textSize="30sp"/>
+        <Button android:id="@+id/btnDot" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="." android:textColor="@color/text_white" android:backgroundTint="@color/btn_dark_gray" android:textSize="30sp"/>
+        <Button android:id="@+id/btnEqual" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="=" android:textColor="@color/text_white" android:backgroundTint="@color/btn_orange" android:textSize="30sp"/>
+    </LinearLayout>
+
+</LinearLayout>
